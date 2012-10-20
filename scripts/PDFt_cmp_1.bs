@@ -1,0 +1,14 @@
+# PDFlatex $1
+# Find $1.tex file name
+# Check if $1 directory exists
+#   if no: 
+#       create it
+# Move .log .aux .pdf files into it
+PDFlatex $1
+if [ -d "PDF"]; then
+    mkdir PDF
+f1
+mv *.log PDF
+mv *.aux PDF
+mv *.pdf PDF
+
